@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4138a8c3d4fa820458abc62d1ea7feb2
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Heightmap: {fileID: 2800000, guid: e28dc97a9541e3642a48c0e3886688c5, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
