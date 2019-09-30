@@ -17,20 +17,26 @@ public class ProceduralCone : MonoBehaviour
     public List<Vector3> vertices = new List<Vector3>();
     private List<int> triangles = new List<int>();
     private List<Vector3> normals = new List<Vector3>();
-
+    private List<Vector2> uvs = new List<Vector2>();
 
     private void Update()
     {
         if (Application.isPlaying) return;
         if (filter == null) return;
         if (_mesh == null)
-            _mesh = new Mesh();
+        {
+            if (filter.mesh == null)
+                _mesh = new Mesh();
+            else
+                _mesh = filter.mesh;
+        }
         if (filter.sharedMesh == null)
             filter.sharedMesh = _mesh;
 
         vertices.Clear();
         triangles.Clear();
         normals.Clear();
+        uvs.Clear();
 
         float angle = 0f;
         Vector3 vertPos;
@@ -38,11 +44,13 @@ public class ProceduralCone : MonoBehaviour
         //VERTS
         float angleIncr = (Mathf.PI * 2f) / edges;
         float topBotDiff = topRadius - botRadius;
+        float iIncr = 1f / (float)edges;
         for (int i = 0; i < edges; i++)
         {
             vertPos = new Vector3(Mathf.Sin(angle) * botRadius, 0f, Mathf.Cos(angle) * botRadius) ;
             vertices.Add(vertPos);
             normals.Add(vertPos.normalized);
+            uvs.Add(new Vector2((float)i * iIncr, 0));
             angle -= angleIncr;
         }
 
@@ -52,6 +60,7 @@ public class ProceduralCone : MonoBehaviour
             vertPos = new Vector3(Mathf.Sin(angle) * topRadius, height, Mathf.Cos(angle) * topRadius);
             vertices.Add(vertPos);
             normals.Add(vertPos.normalized);
+            uvs.Add(new Vector2((float)i * iIncr, 1f));
             angle -= angleIncr;
         }
 
@@ -72,6 +81,7 @@ public class ProceduralCone : MonoBehaviour
         _mesh.Clear();
         _mesh.SetVertices(vertices);
         _mesh.SetTriangles(triangles, 0);
+        _mesh.SetUVs(0, uvs);
         //_mesh.SetNormals(normals);
         _mesh.RecalculateNormals();
     }

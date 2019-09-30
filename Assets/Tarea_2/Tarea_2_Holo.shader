@@ -50,7 +50,7 @@ Shader "Mati36/Tarea_2"
 }
 /*ASEBEGIN
 Version=16400
-627;1;1134;1010;1400.514;675.0432;1.80402;True;False
+7;1;1154;698;1165.991;646.1788;1.80402;True;True
 Node;AmplifyShaderEditor.PosVertexDataNode;74;-711.6523,258.3417;Float;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;76;-719.4519,449.4415;Float;False;Property;_Lines;Lines;1;1;[IntRange];Create;True;0;0;False;0;39.9268;70;0;100;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;83;-872.3587,-68.60754;Float;False;Property;_Bias;Bias;2;0;Create;True;0;0;False;0;0;0;0;0;0;1;FLOAT;0
@@ -81,4 +81,4 @@ WireConnection;78;1;81;0
 WireConnection;0;2;82;0
 WireConnection;0;9;78;0
 ASEEND*/
-//CHKSM=3DCCB043C72F56E33106D9D3C9C153AF0F5C9FEA
+//CHKSM=07CFA01180D8698A5B78EEBE6B61034EF548486D

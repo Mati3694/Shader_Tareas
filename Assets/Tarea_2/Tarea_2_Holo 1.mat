@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tarea_2
-  m_Shader: {fileID: 4800000, guid: 0f58026271f4d0a4990239dcd68748fd, type: 3}
+  m_Name: Tarea_2_Holo 1
+  m_Shader: {fileID: 4800000, guid: 574551b000675ef45afe11bbdd5c0b73, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -18,12 +18,19 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bias: 0
     - _Lines: 70
     - _Pow: 0.45
+    - _Power: 2
     - _Scale: 1.39
+    - _VerticalFadeMult: 2.71
     - __dirty: 0
     m_Colors:
+    - _Color: {r: 0.8207547, g: 0.26713243, b: 0.8087195, a: 0}
     - _Color0: {r: 2.6769786, g: 0.34408006, b: 2.7016656, a: 1}
