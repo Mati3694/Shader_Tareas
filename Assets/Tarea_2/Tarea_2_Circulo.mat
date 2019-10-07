@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tarea_2_Holo 1
-  m_Shader: {fileID: 4800000, guid: 574551b000675ef45afe11bbdd5c0b73, type: 3}
+  m_Name: Tarea_2_Circulo
+  m_Shader: {fileID: 4800000, guid: 031bac2e308e09549b25e95011a277fa, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -24,16 +24,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Bias: 0
-    - _Fade: 0.49
-    - _FadeBias: 5.78
-    - _FadeScale: 1
-    - _Lines: 70
-    - _Pow: 0.45
-    - _Power: 2
-    - _Scale: 1.39
-    - _VerticalFadeMult: 1.43
+    - _DispSpeed: -9.4
+    - _Divisions: 32.6
+    - _Radius: 2.54
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.4627451, g: 1.4980392, b: 2, a: 0}
-    - _Color0: {r: 2.6769786, g: 0.34408006, b: 2.7016656, a: 1}
+    - _Color: {r: 0.57254905, g: 1.3254902, b: 1.4980392, a: 1}
+    - _Radius: {r: 0, g: 0, b: 0, a: 0}

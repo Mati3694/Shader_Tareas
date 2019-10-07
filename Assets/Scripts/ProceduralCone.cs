@@ -12,9 +12,9 @@ public class ProceduralCone : MonoBehaviour
 
     public MeshFilter filter;
 
-    private Mesh _mesh;
+    public Mesh _mesh;
 
-    public List<Vector3> vertices = new List<Vector3>();
+    private List<Vector3> vertices = new List<Vector3>();
     private List<int> triangles = new List<int>();
     private List<Vector3> normals = new List<Vector3>();
     private List<Vector2> uvs = new List<Vector2>();
@@ -25,10 +25,13 @@ public class ProceduralCone : MonoBehaviour
         if (filter == null) return;
         if (_mesh == null)
         {
-            if (filter.mesh == null)
+            if (filter.sharedMesh == null)
+            {
                 _mesh = new Mesh();
+                _mesh.name = "Procedural Cone";
+            }
             else
-                _mesh = filter.mesh;
+                _mesh = filter.sharedMesh;
         }
         if (filter.sharedMesh == null)
             filter.sharedMesh = _mesh;

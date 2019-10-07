@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tarea_2_Holo 1
-  m_Shader: {fileID: 4800000, guid: 574551b000675ef45afe11bbdd5c0b73, type: 3}
+  m_Name: Tarea_2_Holo 2
+  m_Shader: {fileID: 4800000, guid: c4cd646b48dee1e47b5a556a48ad9749, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0

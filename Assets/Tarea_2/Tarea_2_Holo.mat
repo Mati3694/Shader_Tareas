@@ -21,9 +21,10 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _Bias: 0
-    - _Lines: 70
+    - _DispSpeed: 0.1
+    - _Lines: 100
     - _Pow: 0.45
     - _Scale: 1.39
     - __dirty: 0
     m_Colors:
-    - _Color0: {r: 2.6769786, g: 0.34408006, b: 2.7016656, a: 1}
+    - _Color0: {r: 0.3536212, g: 1.3271056, b: 2.7016656, a: 1}
